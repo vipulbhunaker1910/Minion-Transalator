@@ -4,13 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+        body{   
+            background-image:url(images/f537c23fbff19738170f80e8b3f148d4.jpg);
+            background-repeat: no-repeat;
+            height: 100px;
+            background-color: yellow;
+            background-size: 50%;
+            font-family:  'Montserrat', 'sans-serif';
+        }
+        body h1{
+            text-align: center;
+        }
+        .name-span{
+            color:gold;
+        }
+        button{
+            background-color: black;
+            color: white;
+            border-radius: 0.5rem;
+            padding: 0.5rem 1rem;
+            margin: auto;
+            display: block;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: white;
+            color: black;
+            border-radius: 0.5rem;
+        }
+        #txt-area{
+            background-color: burlywood;
+            width: 60%;
+            height: 10rem;
+            color: white;
+            padding: 1rem;
+            margin: auto;
+            display: block;
+        }
+        #txt-outpt-area{
+            background-color: burlywood;
+            width: 60%;
+            height: 10rem;
+            color: white;
+            padding: 1rem;
+            margin: auto;
+            display: block;
+        }
+        .footer{
+            
+            background-color: royalblue;
+            text-align: center;
+            color:white;
+        }
+    </style>
     <title>Document</title>
 </head>
+<header>
+    <h1><span class="name-span">Minio</span>n App</h1>
+</header>
 <body>
-    <textarea id="txt-area" placeholder="Write Something to transalate into Menion Language"></textarea><br>
-    <button id="btn-tranlaste">Translate</button><br>
+    <textarea id="txt-area" class="area-text" placeholder="Write Something to transalate into Menion Language"></textarea><br>
+    <button id="btn-tranlaste">Translate</button> <br>
     <textarea id="txt-outpt-area" placeholder="Translated Mennion language can be seen here"></textarea>
 
     <script src="Translator.js" type="text/javascript"></script>
 </body>
+<footer class="footer">
+    <h3>what is this about</h3>
+    <div class="footer-text">
+        Are you fan of Minions. Use this transaltor to convert English to Minion Language.
+    </div>
+</footer>
 </html>
